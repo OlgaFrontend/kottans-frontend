@@ -1,4 +1,4 @@
-# kottans-frontend-2019
+# kottans-frontend
 
 # Task 0 
 
