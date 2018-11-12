@@ -3,8 +3,8 @@
 # Task_1_git_intro
 
 - thank you for this great course
-- I learned some new features, especially the principal of how git works and its history
-- learned some new commands
+- I learnt some new features, especially the principal of how git works and its history
+- learnt some new commands
 - repeated some info
 
 :paperclip: ![Screenshot](task_1_git_intro/task_1_1.png)
