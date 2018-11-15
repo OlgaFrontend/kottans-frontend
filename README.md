@@ -10,9 +10,16 @@
 :paperclip: ![Screenshot](task_1_git_intro/task_1_1.png)
 :paperclip: ![Screenshot](task_1_git_intro/task_1_2.png)
 
-# Task_2_linux_cli
+## Linux CLI, and HTTP
 
 - great course!!! Thank you!!!
 
 :paperclip: ![Screenshot](task_2_linux_cli/task_2_linux_cli.png)
+
+## Git Collaboration
+
+- Guys, thank you for this course! It's amazing and completely useful! I use many commands at my work, sometimes even don't understand how they really work, but now I understand all of them under the hood!
+
+:paperclip: ![Screenshot](task_git_collaboration/github_collaboration.png)
+(task_git_collaboration/version_control.png)
 
