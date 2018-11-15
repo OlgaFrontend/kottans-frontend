@@ -21,5 +21,5 @@
 - Guys, thank you for this course! It's amazing and completely useful! I use many commands at my work, sometimes even don't understand how they really work, but now I understand all of them under the hood!
 
 :paperclip: ![Screenshot](task_git_collaboration/github_collaboration.png)
-(task_git_collaboration/version_control.png)
+:paperclip: ![Screenshot](task_git_collaboration/version_control.png)
 
