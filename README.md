@@ -29,3 +29,12 @@
 
 :paperclip: ![Screenshot](task_html_css_intro/html_css_udacity.png)
 :paperclip: ![Screenshot](task_html_css_intro/htmlacademy.png)
+
+## Responsive Web Design
+
+- Thank you for course! Honestly I've just refreshed my knowledge, because course is too basics, but anyway it's so good enough to really understand of responsive web design main concept! :)
+
+:paperclip: ![Screenshot](task_responsive_web_design/udacity_responsive.png)
+:paperclip: ![Screenshot](task_responsive_web_design/frogs.png)
+
+
