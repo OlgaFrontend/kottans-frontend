@@ -37,4 +37,10 @@
 :paperclip: ![Screenshot](task_responsive_web_design/udacity_responsive.png)
 :paperclip: ![Screenshot](task_responsive_web_design/frogs.png)
 
+## JS Basics
+
+- Thank you for course! It helps me to resfresh my knowledge in JS, especially some tricky points :)
+
+:paperclip: ![Screenshot](task_js_basics/js_basics_udacity.png)
+
 
