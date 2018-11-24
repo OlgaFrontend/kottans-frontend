@@ -42,5 +42,6 @@
 - Thank you for course! It helps me to resfresh my knowledge in JS, especially some tricky points :)
 
 :paperclip: ![Screenshot](task_js_basics/js_basics_udacity.png)
+:paperclip: ![Screenshot](task_js_basics/FE_algorithm_js.png)
 
 
