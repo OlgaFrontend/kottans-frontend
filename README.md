@@ -39,7 +39,8 @@
 
 ## JS Basics
 
-- Thank you for course! It helps me to resfresh my knowledge in JS, especially some tricky points :)
+- Thank you for course from Udacity! It helps me to resfresh my knowledge in JS, especially some tricky points :)
+FE intermidiate algorithm tasks was enough challenging for me, but anyway really cool !!! Thanks :)
 
 :paperclip: ![Screenshot](task_js_basics/js_basics_udacity.png)
 :paperclip: ![Screenshot](task_js_basics/FE_algorithm_js.png)
