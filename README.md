@@ -45,4 +45,12 @@ FE intermediate algorithm tasks were enough challenging for me, but anyway reall
 :paperclip: ![Screenshot](task_js_basics/js_basics_udacity.png)
 :paperclip: ![Screenshot](task_js_basics/FE_algorithm_js.png)
 
+## JS DOM
+
+- Thank you for course JS_DOM ! It helps me to resfresh my knowledge in DOM, especially some tricky points, and it was suprisingly for me to know about createDocumentFragment() method :)
+- What about FE intermediate algorithm, tasks were difficult, sometimes I should see some hints, but know I understand in what direction I should work. Thanks :)
+
+:paperclip: ![Screenshot](task_js_dom/task_js_dom.png)
+:paperclip: ![Screenshot](task_js_dom/task_freecodecamp.png)
+
 
