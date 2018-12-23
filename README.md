@@ -55,7 +55,7 @@ FE intermediate algorithm tasks were enough challenging for me, but anyway reall
 
 - Thank you for this practical task! I understand that there are some points on which I should work!
 
-[Demo](https://olgafrontend.github.io/kottans-frontend/task_js_dom/practice_js_dom/);
-[Code](https://github.com/OlgaFrontend/kottans-frontend/tree/master/task_js_dom/practice_js_dom);
+### [Demo](https://olgafrontend.github.io/kottans-frontend/task_js_dom/practice_js_dom/) |
+### [Code](https://github.com/OlgaFrontend/kottans-frontend/tree/master/task_js_dom/practice_js_dom);
 
 
