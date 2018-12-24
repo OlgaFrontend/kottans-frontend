@@ -16,3 +16,4 @@ const data = [
     img: 'img/autumn.jpg'
   },
 ];
+
