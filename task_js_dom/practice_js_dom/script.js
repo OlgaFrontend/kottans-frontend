@@ -27,7 +27,9 @@ navList.addEventListener('click', function(e) {
   if (listItem.nodeName === 'LI') {
     const indexOfActiveItem = getIndexOfActiveItem(listItem);
     const img = getImage(indexOfActiveItem, data);
-    content.innerHTML = '<img src="'+ img + '" />'
+    if(img) {
+      content.innerHTML = '<img src="'+ img + '" />';
+    }
   }
 });
 
