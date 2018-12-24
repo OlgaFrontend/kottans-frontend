@@ -26,14 +26,14 @@ navList.addEventListener('click', function(e) {
   let listItem = e.target;
   if (listItem.nodeName === 'LI') {
     const indexOfActiveItem = getIndexOfActiveItem(listItem);
-    const img = filterData(indexOfActiveItem, data);
+    const img = getImage(indexOfActiveItem, data);
     content.innerHTML = '<img src="'+ img + '" />'
   }
 });
 
-function filterData(indexOfActiveItem, data) {
+function getImage(indexOfActiveItem, data) {
   let img;
-  const arr = data.filter(item => { 
+  const arr = data.find(item => { 
     if (item.id === indexOfActiveItem) {
       img = item.img;
     };
