@@ -12,7 +12,9 @@ logo.addEventListener('click', function() {
     navList.classList.remove('active');
   }
   const elem = content.querySelector("img");
-  elem.remove();
+  if(elem) {
+    elem.remove();
+  }
 });
 
 menuBtn.addEventListener('click', function(e) {
@@ -41,6 +43,5 @@ function filterData(indexOfActiveItem, data) {
 
 function getIndexOfActiveItem(targetItem) {
   const arr = [...menuItems];
-  const indexItem = arr.indexOf(targetItem);
-  return indexItem;
+  return arr.indexOf(targetItem);
 }
