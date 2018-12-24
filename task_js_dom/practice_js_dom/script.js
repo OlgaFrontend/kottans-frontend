@@ -47,3 +47,7 @@ function getIndexOfActiveItem(targetItem) {
   const arr = [...menuItems];
   return arr.indexOf(targetItem);
 }
+
+
+
+
