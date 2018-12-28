@@ -61,6 +61,6 @@ FE intermediate algorithm tasks were enough challenging for me, but anyway reall
 
 - Thank you for this task! I've never encountered with OOP in real life and understand all interesting ahead!!!
 
-### [Demo](https://olgafrontend.github.io/kottans-frontend/task_js_pre-oop/) |  [Code](https://github.com/OlgaFrontend/kottans-frontend/task_js_pre-oop/)
+### [Demo](https://olgafrontend.github.io/kottans-frontend/task_js_pre-oop/) |  [Code](https://github.com/OlgaFrontend/kottans-frontend/tree/master/task_js_pre-oop)
 
 
