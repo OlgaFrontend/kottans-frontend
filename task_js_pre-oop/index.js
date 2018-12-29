@@ -66,7 +66,7 @@ const getInhabitants = (inhabitants) => {
                         <td style="width: 100px;">${el.species}</td>
                         <td style="width: 100px;">${el.gender}</td>
                         <td style="width: 100px;">${el.legs}</td>
-                        <td style="width: 100px;">${el.hands}<td>
+                        <td style="width: 100px;">${el.hands}</td>
                         <td style="width: 100px;">${el.paws}</td>
                         <td style="width: 100px;">${el.tail}</td>
                         <td style="width: 100px;">${el.greeting}</td>
