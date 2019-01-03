@@ -71,6 +71,11 @@ FE intermediate algorithm tasks were enough challenging for me, but anyway reall
 
 ### [Demo Frogger-Game](https://olgafrontend.github.io/kottans-frontend/frogger-game/) |  [Code Frogger-Game](https://github.com/OlgaFrontend/kottans-frontend/tree/master/frogger-game)
 
+## OOP Exercise
+
+## Memory Pair Game
+
+## Friends App
 
 
 
