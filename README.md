@@ -75,6 +75,10 @@ Reviewed and approved by @OleksiyRudenko
 
 ## OOP Exercise
 
+- Thank you for this task! It is helped me to understand OOP concepts much deeper and improve my tech skills! I trained to use classes from ES6 and its methods!
+
+### [Demo](https://olgafrontend.github.io/kottans-frontend/task_js-oop-practice/) |  [Code](https://github.com/OlgaFrontend/kottans-frontend/tree/master/task_js-oop-practice)
+
 ## Memory Pair Game
 
 ## Friends App
