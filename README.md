@@ -63,4 +63,16 @@ FE intermediate algorithm tasks were enough challenging for me, but anyway reall
 
 ### [Demo](https://olgafrontend.github.io/kottans-frontend/task_js_pre-oop/) |  [Code](https://github.com/OlgaFrontend/kottans-frontend/tree/master/task_js_pre-oop)
 
+## Object Oriented JS
+
+- Thank you for OOP course from Udacity! As I mentioned above I've never encountered with OOP in real life, but I know some basics definitions such as prototype, inheretance, encapsulation and so on, but before this course I didn't realise how all these things work together. This course clarifies to me all main points about OOP. To be honest OOP is not so difficult in practice, but there are some tricky things, for example keyword 'this', scope etc, which sometimes can confuse beginners, but I think practice can help to cope with these challenges. Again THANK YOU so much!!!
+
+:paperclip: ![Screenshot](task_js-oop/oop_udacity.png)
+
+### [Demo Frogger-Game](https://olgafrontend.github.io/kottans-frontend/frogger-game/) |  [Code Frogger-Game](https://github.com/OlgaFrontend/kottans-frontend/tree/master/frogger-game)
+
+
+
+
+
 
