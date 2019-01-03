@@ -56,12 +56,14 @@ FE intermediate algorithm tasks were enough challenging for me, but anyway reall
 - Thank you for this practical task! I understand that there are some points on which I should work!
 
 ### [Demo](https://olgafrontend.github.io/kottans-frontend/task_js_dom/practice_js_dom/) |  [Code](https://github.com/OlgaFrontend/kottans-frontend/tree/master/task_js_dom/practice_js_dom)
+Reviewed and approved by @AMashoshyna
 
 ## JS-PRE-OOP
 
 - Thank you for this task! I've never encountered with OOP in real life and understand all interesting ahead!!!
 
 ### [Demo](https://olgafrontend.github.io/kottans-frontend/task_js_pre-oop/) |  [Code](https://github.com/OlgaFrontend/kottans-frontend/tree/master/task_js_pre-oop)
+Reviewed and approved by @OleksiyRudenko
 
 ## Object Oriented JS
 
