@@ -81,6 +81,8 @@ Reviewed and approved by @OleksiyRudenko
 
 ## Memory Pair Game
 
+### [Demo](https://olgafrontend.github.io/kottans-frontend/task_memory-game/) |  [Code](https://github.com/OlgaFrontend/kottans-frontend/tree/master/task_memory-game)
+
 ## Friends App
 
 
