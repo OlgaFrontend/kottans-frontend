@@ -79,6 +79,7 @@ Reviewed and approved by @AMashoshyna
 - Thank you for this task! It is helped me to understand OOP concepts much deeper and improve my tech skills! I trained to use classes from ES6 and its methods!
 
 ### [Demo](https://olgafrontend.github.io/kottans-frontend/task_js-oop-practice/) |  [Code](https://github.com/OlgaFrontend/kottans-frontend/tree/master/task_js-oop-practice)
+Reviewed and approved by @OleksiyRudenko
 
 ## Memory Pair Game
 
