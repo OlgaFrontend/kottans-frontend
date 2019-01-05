@@ -72,6 +72,7 @@ Reviewed and approved by @OleksiyRudenko
 :paperclip: ![Screenshot](task_js-oop/oop_udacity.png)
 
 ### [Demo Frogger-Game](https://olgafrontend.github.io/kottans-frontend/frogger-game/) |  [Code Frogger-Game](https://github.com/OlgaFrontend/kottans-frontend/tree/master/frogger-game)
+Reviewed and approved by @AMashoshyna
 
 ## OOP Exercise
 
