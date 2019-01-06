@@ -39,6 +39,8 @@ body {
 
 .game-card.flip {
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateX(180deg);
 }
 
 .front-side,
@@ -50,10 +52,14 @@ body {
   border-radius: 5px;
   background: #fff;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
 }
 
 .front-side {
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateX(180deg);
 }
 
 .back-side {
