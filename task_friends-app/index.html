@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FRIENDS APP</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="app">
+    <header class="app-header"></header>
+    <main class="app-body">
+        <div class="app-bar">
+          <form id="form-filter">
+            <fieldset id="user-name">
+              <span>Filter by name</span>
+              <input value="up-name" name="group-name" class="input-name-up" type="radio" />
+              <label for="up-name">A-Z</label>
+              <input value="down-name" name="group-name" class="input-name-d" type="radio" />
+              <label for="down-name">Z-A</label>
+            </fieldset>
+            <fieldset id="user-age">
+              <span>Sort by age</span>
+              <input name="group-age" class="input-age-up" type="radio" value="up-age"/>
+              <label for="up-age">1-9</label>
+              <input name="group-age" class="input-age-d" type="radio" value="down-age"/>
+              <label for="down-age">9-1</label>
+            </fieldset>
+            <fieldset id="user-gender">
+              <span>Filter by gender</span>
+              <input id="male" name="group-gender" class="input-gender input-male" type="radio" value="male" />
+              <label for="male">male</label>
+              <input id="female" name="group-gender" class="input-gender input-female" type="radio" value="female" />
+              <label for="female">female</label>
+            </fieldset>
+            <fieldset>
+              <input class="search-by-name" type="text" placeholder="Search by name..."></input>
+              <button type="button" class="search-name-btn">search</button>
+            </fieldset>
+            <fieldset>
+              <input class="search-by-age" type="text" placeholder="Search by age..."></input>
+              <button type="button" class="search-age-btn">search</button>
+            </fieldset>
+          </form>
+          <button type="button" class="btn-reset">Reset</button>
+        </div>
+        <div class="user-list">
+        </div>
+    </main>
+  </div>
+  <script type="text/lodash-template" id="user-card">
+		<div class="user-list__item">
+			<div class="user-card">
+				<span class="user-card__name"><%- name %></span>
+				<img  class="user-card__img" src="<%- img %>" alt="user-photo">
+				<div class="user-info"
+          <p class="user-info__gender"><%- gender %></p>
+          <p class="user-info__age"><%- age %></p>
+					<p class="user-info__location"><%- location %>...</p>
+					<p class="user-info__email"><%- email %></p>
+			</div>
+			</div>
+		</div>
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.4/lodash.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
