@@ -87,7 +87,7 @@ Reviewed and approved by @OleksiyRudenko
 Reviewed and approved by @yevhenorlov
 
 ## Friends App
-
+### [Demo](https://olgafrontend.github.io/kottans-frontend/task_friends-app/) |  [Code](https://github.com/OlgaFrontend/kottans-frontend/tree/master/task_friends-app)
 
 
 
