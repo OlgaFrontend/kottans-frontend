@@ -1,17 +1,15 @@
-const formFilter = document.getElementById('form-filter');
-const inputsForm = formFilter.querySelectorAll('input');
-const userList = document.querySelector('.user-list');
-const btnSearchByName = document.querySelector('.search-name-btn');
-const inputName = document.querySelector('.search-by-name');
-const btnSearchByAge = document.querySelector('.search-age-btn');
-const inputAge = document.querySelector('.search-by-age');
-const reset = document.querySelector('.btn-reset');
+const FORM_FILTER = document.getElementById('form-filter');
+const INPUTS_FORM = FORM_FILTER.querySelectorAll('input');
+const USER_LIST = document.querySelector('.user-list');
+const BTN_SEARCH_BY_NAME = document.querySelector('.search-name-btn');
+const INPUT_NAME = document.querySelector('.search-by-name');
+const BTN_SEARCH_BY_AGE = document.querySelector('.search-age-btn');
+const INPUT_AGE = document.querySelector('.search-by-age');
+const RESET = document.querySelector('.btn-reset');
 
-
-const endpoint = 'https://randomuser.me/api/?';
-const res = 'results=5';
-const apiUrl = `${endpoint}${res}`;
-console.log(apiUrl);
+const ENDPOINT = 'https://randomuser.me/api/?';
+const RES = 'results=20';
+const apiUrl = `${ENDPOINT}${RES}`;
 
 //get users from API
 const fetchUsers = () =>
@@ -26,16 +24,12 @@ const fetchUsers = () =>
 		})
 		.then(data => data.results)
     .catch(error => console.log('error'));
-
-console.log(fetchUsers());
     
 //prepare data for using template
 const source = document
 .querySelector('#user-card')
 .textContent
 .trim();
-
-console.log(source);
   
 //compile data using template
 const compiled = _.template(source);
@@ -61,76 +55,63 @@ users.then(data => {
       email: user.email,
       })
   );
-  console.table(users);
 
-  btnSearchByName.addEventListener('click', function(e) {
+
+  FORM_FILTER.addEventListener('click', function(e) {
+    const target = e.target;
+    const inputChecked = target.checked;
+    let isSortedUsers;
+    switch (target === 'INPUT' !== null && inputChecked) {
+      case target.value === 'up-age':
+        isSortedUsers = users.sort((a, b) => a.age - b.age);
+        renderUsers(isSortedUsers, compiled, USER_LIST);
+        break;
+      case target.value === 'down-age':
+        isSortedUsers = users.sort((a, b) => b.age - a.age);
+        renderUsers(isSortedUsers, compiled, USER_LIST);
+        break;
+      case target.value === 'up-name': 
+        isSortedUsers = users.sort((a, b) => ((a.name > b.name) - (a.name < b.name)));
+        renderUsers(isSortedUsers, compiled, USER_LIST);
+        break;
+      case target.value === 'down-name':
+        isSortedUsers = users.sort((a, b) => ((a.name < b.name) - (a.name > b.name)));
+        renderUsers(isSortedUsers, compiled, USER_LIST);
+        break;
+      case target.value === 'male' || target.value === 'female':
+        const isFilteredUsers = users.filter(item => item.gender === target.value);
+        renderUsers(isFilteredUsers, compiled, USER_LIST);
+        break;
+    }
+  });
+
+  BTN_SEARCH_BY_NAME.addEventListener('click', function(e) {
     e.preventDefault();
-    let inputNameVal = inputName.value;
+    let inputNameVal = INPUT_NAME.value;
     const isFilteredUsers = users.filter(item => (
       item.name.toLowerCase().includes(inputNameVal))
     );
-    console.log(isFilteredUsers);
-    renderUsers(isFilteredUsers, compiled, userList);
+    renderUsers(isFilteredUsers, compiled, USER_LIST);
   });
 
-  btnSearchByAge.addEventListener('click', function(e) {
+  BTN_SEARCH_BY_AGE.addEventListener('click', function(e) {
     e.preventDefault();
-    console.log('age');
-    let inputAgeVal = inputAge.value;
+    let inputAgeVal = INPUT_AGE.value;
     const isFilteredUsers = users.filter(item => (
       String(item.age) === inputAgeVal)
     );
-    renderUsers(isFilteredUsers, compiled, userList);
+    renderUsers(isFilteredUsers, compiled, USER_LIST);
   });
 
-  formFilter.addEventListener('click', function(e) {
-    const target = e.target;
-    const inputChecked = target.checked;
-    if (target === 'INPUT' !== null && inputChecked) {
-      const isFilteredUsers = users.filter(item => item.gender === target.value);
-      renderUsers(isFilteredUsers, compiled, userList);
-    }
+
+  RESET.addEventListener('click', function() {
+    renderUsers(users, compiled, USER_LIST);
+    INPUT_NAME.value = '';
+    INPUT_AGE.value = '';
+    [...INPUTS_FORM].forEach((item) => {
+      item.checked = false;
+    });
   });
 
-  formFilter.addEventListener('click', function(e) {
-    const target = e.target;
-    const inputChecked = target.checked;
-    if (target === 'INPUT' !== null && inputChecked && target.value === 'up-age') {
-      const isSortedUsers = users.sort((a, b) => a.age - b.age);
-      renderUsers(isSortedUsers, compiled, userList);
-    } else if (target === 'INPUT' !== null && inputChecked && target.value === 'down-age') {
-      const isSortedUsers = users.sort((a, b) => b.age - a.age);
-      renderUsers(isSortedUsers, compiled, userList);
-    } else if (target === 'INPUT' !== null && inputChecked && target.value === 'up-name') {
-      const isSortedUsers = users.sort((a, b) => ((a.name > b.name) - (a.name < b.name)));
-      renderUsers(isSortedUsers, compiled, userList);
-    } else if (target === 'INPUT' !== null && inputChecked && target.value === 'down-name') {
-      const isSortedUsers = users.sort((a, b) => ((a.name < b.name) - (a.name > b.name)));
-      renderUsers(isSortedUsers, compiled, userList);
-    }
-  });
-
-  reset.addEventListener('click', function() {
-    renderUsers(users, compiled, userList);
-    inputName.value = '';
-  });
-
-  renderUsers(users, compiled, userList);
+  renderUsers(users, compiled, USER_LIST);
 });
-
-//filter users by gender
-const filterByGender = (data, inputValue) => {
-  return data.filter(item => item.gender === inputValue);
-}
-
-
-
-
-// formFilter.addEventListener('click', function(e) {
-//   const targetInput = e.target.closest('input');
-//   targetInput !== null
-//   && targetInput.checked
-//   && filterByGender();
-
-// });
-
