@@ -4,6 +4,10 @@ const USER_LIST = document.querySelector('.user-list');
 const INPUT_NAME = document.querySelector('.search-by-name');
 const INPUT_AGE = document.querySelector('.search-by-age');
 const RESET = document.querySelector('.btn-reset');
+const INPUT_UP = document.querySelector('#up-name');
+const INPUT_DOWN = document.querySelector('#down-name');
+const INPUT_MALE = document.querySelector('#male');
+const INPUT_FEMALE = document.querySelector('#female');
 
 const ENDPOINT = 'https://randomuser.me/api/?';
 const RES = 'results=20';
@@ -70,6 +74,9 @@ const makeSearch = ({ target }) => {
   let getUsers = users;
   let inputVal;
   switch ((target !== null && inputChecked) || (target.classList.contains('search-btn'))) {
+    case target.value === 'male' || target.value === 'female':
+      getUsers = users.filter(item => item.gender === target.value);
+      break;
     case target.value === 'up-age':
       getUsers = users.sort((a, b) => a.age - b.age);
       break;
@@ -81,9 +88,6 @@ const makeSearch = ({ target }) => {
       break;
     case target.value === 'down-name':
       getUsers = users.sort((a, b) => ((a.name < b.name) - (a.name > b.name)));
-      break;
-    case target.value === 'male' || target.value === 'female':
-      getUsers = users.filter(item => item.gender === target.value);
       break;
     case target.classList.contains('search-name-btn'):
       inputVal = INPUT_NAME.value;
@@ -101,6 +105,7 @@ const makeSearch = ({ target }) => {
       });
       break;
   }
+
   renderUsers(getUsers, USER_LIST);
 };
 

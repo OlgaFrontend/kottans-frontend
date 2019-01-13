@@ -113,7 +113,8 @@ body {
 }
 
 .search-box label {
-  width: 50px;
+  width: 100px;
+  display: flex;
 }
 
 .search-input {
