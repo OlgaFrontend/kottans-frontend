@@ -91,6 +91,10 @@ Reviewed and approved by @yevhenorlov
 ### [Demo](https://olgafrontend.github.io/kottans-frontend/task_friends-app/) |  [Code](https://github.com/OlgaFrontend/kottans-frontend/tree/master/task_friends-app)
 Reviewed and approved by @zonzujiro
 
+## Popup-html-css
+### [Demo](https://olgafrontend.github.io/kottans-frontend/popup_html_css/) |  [Code](https://github.com/OlgaFrontend/kottans-frontend/tree/master/popup_html_css)
+
+
 
 
 
