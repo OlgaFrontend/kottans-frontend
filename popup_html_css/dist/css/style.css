@@ -164,7 +164,16 @@ a {
 
 .popup .link {
   margin: 2px 8px;
-  display: block; }
+  padding: 2px 0;
+  display: block;
+  border: 1px solid transparent;
+  -webkit-transition: border .2s ease-in-out;
+  transition: border .2s ease-in-out; }
+
+.popup .link:hover {
+  border: 1px solid lightgray;
+  -webkit-border-radius: 3px;
+          border-radius: 3px; }
 
 .popup .img-wrap {
   width: 64px;
@@ -194,8 +203,15 @@ a {
 .popup .list-more {
   display: none; }
 
-.popup .input-more {
-  visibility: hidden; }
+.popup .visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px; }
+
+.popup .input-more:focus + .btn-more {
+  outline: auto; }
 
 .popup .input-more:checked ~ .list-more {
   display: -webkit-box;
