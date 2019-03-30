@@ -196,7 +196,6 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -220,10 +219,10 @@ a {
     background-size: 100%; }
   .go-back .arrow-icon,
   .sign-in .arrow-icon {
-    background-image: url("/images/arrow-back.png"); }
+    background-image: url("../images/arrow-back.png"); }
   .go-back .sign-in-icon,
   .sign-in .sign-in-icon {
-    background-image: url("/images/user-account.png"); }
+    background-image: url("../images/user-account.png"); }
 
 @media (max-width: 768px) {
   .go-back {
@@ -971,8 +970,27 @@ a {
         margin-left: -19px; } }
 
 .range-input {
+  position: relative;
   display: block;
   width: 413px; }
+
+.range-input:before,
+.range-input:after {
+  position: absolute;
+  content: '';
+  top: -2px;
+  width: 15px;
+  height: 15px;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  background-color: lightgray;
+  z-index: 1; }
+
+.range-input:before {
+  left: 0; }
+
+.range-input:after {
+  right: 0; }
 
 .range-label {
   display: -webkit-box;
@@ -1001,10 +1019,11 @@ input[type=range]::-webkit-slider-runnable-track {
   height: 11.3px;
   cursor: pointer;
   background: #eceef4;
-  -webkit-border-radius: 1px;
-          border-radius: 1px; }
+  -webkit-border-radius: 5px;
+          border-radius: 5px; }
 
 input[type=range]::-webkit-slider-thumb {
+  position: relative;
   height: 23px;
   width: 23px;
   -webkit-border-radius: 12px;
@@ -1012,7 +1031,8 @@ input[type=range]::-webkit-slider-thumb {
   background: #edbe76;
   cursor: pointer;
   -webkit-appearance: none;
-  margin-top: -6.95px; }
+  margin-top: -6.95px;
+  z-index: 10; }
 
 input[type=range]:focus::-webkit-slider-runnable-track {
   border: 1px solid #76a7e1; }
@@ -1119,13 +1139,25 @@ input[type=range]:focus::-ms-fill-upper {
     .user-info .sign-up-label:first-of-type {
       width: 100%;
       margin-bottom: 38px; }
-  @media (max-width: 960px) {
-    .user-info .sign-up-input {
-      width: 80%;
-      max-width: 300px; } }
-  @media (max-width: 576px) {
-    .user-info .sign-up-input {
-      width: 100%; } }
+  .user-info .sign-up-input {
+    position: relative; }
+    @media (max-width: 960px) {
+      .user-info .sign-up-input {
+        width: 80%;
+        max-width: 300px; } }
+    @media (max-width: 576px) {
+      .user-info .sign-up-input {
+        width: 100%; } }
+  .user-info .sign-up-input:valid,
+  .user-info .sign-up-input:invalid {
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position-y: 50%;
+    background-position-x: 96%; }
+  .user-info .sign-up-input:valid {
+    background-image: url("../images/checked.svg"); }
+  .user-info .sign-up-input:invalid {
+    background-image: url("../images/error.svg"); }
 
 .sign-in-link {
   text-decoration: underline;
